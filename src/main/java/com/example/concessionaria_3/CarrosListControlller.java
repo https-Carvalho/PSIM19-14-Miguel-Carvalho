@@ -61,6 +61,42 @@ public class CarrosListControlller implements Initializable {
         Settings.getCars().clear();
         tableViewCarro.setItems(CarrosDAO.listarCarros());
 
+        FilteredList<Carros> filtro = new FilteredList<>(Settings.getCars());
+
+        txtSearch.textProperty().addListener((observable, oldValue, newValue) ->{
+            filtro.setPredicate(carros -> {
+                if(newValue == null || newValue.isEmpty()){
+                    return true;
+                }
+
+                String searchData = newValue.toLowerCase();
+                if(String.valueOf(carros.getIdCarro()).contains(searchData)){
+                    return true;
+                }
+                else if(String.valueOf(carros.getModelo()).contains(searchData)){
+                    return true;
+                }
+                else if(String.valueOf(carros.getModelo()).contains(searchData)){
+                    return true;
+                }
+                else if(String.valueOf(carros.getDataRegistro()).contains(searchData)){
+                    return true;
+                }
+                else if(String.valueOf(carros.getPreco()).contains(searchData)){
+                    return true;
+                }
+                else if(String.valueOf(carros.getStatus()).contains(searchData)){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            });
+        });
+        SortedList<Carros> carrosSortedList = new SortedList<>(filtro);
+        carrosSortedList.comparatorProperty().bind(tableViewCarro.comparatorProperty());
+        tableViewCarro.setItems(carrosSortedList);
+
         btnEditar.setDisable(true);
         btnEliminar.setDisable(true);
     }

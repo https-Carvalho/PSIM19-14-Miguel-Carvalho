@@ -1,5 +1,7 @@
 package com.example.concessionaria_3;
 
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
 import javafx.scene.Parent;
@@ -61,19 +63,25 @@ public class VendasListController implements Initializable {
             tableViewVendas.setItems(VendasDAO.listarVendas());
             System.out.println(Settings.getVendas().size());
 
-            /*FilteredList<Clientes> searchDados = new FilteredList<>(Settings.getClients());
+            FilteredList<Vendas> filtro = new FilteredList<>(Settings.getVendas());
 
             txtSearch.textProperty().addListener((observable, oldValue, newValue) ->{
-                searchDados.setPredicate(clientes -> {
+                filtro.setPredicate(vendas -> {
                     if(newValue == null || newValue.isEmpty()){
                         return true;
                     }
 
-                    String searchNome = newValue.toLowerCase();
-                    if(clientes.getNome().toLowerCase().contains(searchNome) ){
+                    String searchDados = newValue.toLowerCase();
+                    if(String.valueOf(vendas.getIdVenda()).contains(searchDados)){
                         return true;
                     }
-                    else if(String.valueOf(clientes.getIdCliente()).contains(searchNome)){
+                    else if(String.valueOf(vendas.getIdCarro()).contains(searchDados)){
+                        return true;
+                    }
+                    else if(String.valueOf(vendas.getDataVenda()).contains(searchDados)){
+                        return true;
+                    }
+                    else if(String.valueOf(vendas.getValor()).contains(searchDados)){
                         return true;
                     }
                     else{
@@ -82,10 +90,10 @@ public class VendasListController implements Initializable {
                 });
             });
 
-            SortedList<Clientes> sortedDados = new SortedList<>(searchDados);
-            sortedDados.comparatorProperty().bind(tableViewCliente.comparatorProperty());
-            tableViewCliente.setItems(sortedDados);
-             */
+            SortedList<Vendas> vendasSortedList = new SortedList<>(filtro);
+            vendasSortedList.comparatorProperty().bind(tableViewVendas.comparatorProperty());
+            tableViewVendas.setItems(vendasSortedList);
+
 
             // Fim do filtro de pesquisa
 

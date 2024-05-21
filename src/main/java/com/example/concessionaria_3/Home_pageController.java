@@ -27,4 +27,9 @@ public class Home_pageController {
         borderPane.setCenter(scene);
 
     }
+
+    public void buttonAcercaDe(ActionEvent actionEvent) throws IOException {
+        Parent scene = FXMLLoader.load(getClass().getResource("about.fxml"));
+        borderPane.setCenter(scene);
+    }
 }

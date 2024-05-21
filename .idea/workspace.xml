@@ -4,45 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83310d9b-0e45-4e58-ab91-516725ef512f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Carros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/CarrosController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/CarrosDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/CarrosListControlller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Clientes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/ClientesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/ClientesDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/ClientesListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/ConexaoDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Home_pageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/SignupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Vendas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/VendasController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/VendasDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/VendasListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Carros.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Clientes.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Home_page.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/MenuCarros.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/MenuVendas.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Signup.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Vendas.fxml" afterDir="false" />
+    <list default="true" id="83310d9b-0e45-4e58-ab91-516725ef512f" name="Changes" comment="Finaliação do projeto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/AboutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/CarrosListControlller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/CarrosListControlller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/ClientesListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/ClientesListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Home_pageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/Home_pageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/VendasListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/concessionaria_3/VendasListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Home_page.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/concessionaria_3/Home_page.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +80,20 @@
       <option name="presentableId" value="Default" />
       <updated>1714649713306</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finaliação do projeto">
+      <option name="closed" value="true" />
+      <created>1716248709580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716248709581</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finaliação do projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finaliação do projeto" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

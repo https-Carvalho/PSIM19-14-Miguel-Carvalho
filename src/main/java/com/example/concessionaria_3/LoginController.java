@@ -86,7 +86,7 @@ public class LoginController {
 
         // Nova janela
         Stage SignUp = new Stage();
-        SignUp.setTitle("Lista de Clientes - Remover Cliente");
+
 
         // Associação da Scene à Stage
         SignUp.setScene(new Scene(scene));

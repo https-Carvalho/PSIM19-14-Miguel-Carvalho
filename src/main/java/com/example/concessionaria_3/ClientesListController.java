@@ -50,19 +50,19 @@ import java.util.ResourceBundle;
             tableViewCliente.setItems(ClientesDAO.listarClientes());
             System.out.println(Settings.getClients().size());
     
-            /*FilteredList<Clientes> searchDados = new FilteredList<>(Settings.getClients());
+            FilteredList<Clientes> filtro = new FilteredList<>(Settings.getClients());
     
             txtSearch.textProperty().addListener((observable, oldValue, newValue) ->{
-                searchDados.setPredicate(clientes -> {
+                filtro.setPredicate(clientes -> {
                     if(newValue == null || newValue.isEmpty()){
                         return true;
                     }
     
-                    String searchNome = newValue.toLowerCase();
-                    if(clientes.getNome().toLowerCase().contains(searchNome) ){
+                    String searchDados = newValue.toLowerCase();
+                    if(clientes.getNome().toLowerCase().contains(searchDados) ){
                         return true;
                     }
-                    else if(String.valueOf(clientes.getIdCliente()).contains(searchNome)){
+                    else if(String.valueOf(clientes.getIdCliente()).contains(searchDados)){
                         return true;
                     }
                     else{
@@ -71,10 +71,9 @@ import java.util.ResourceBundle;
                 });
             });
     
-            SortedList<Clientes> sortedDados = new SortedList<>(searchDados);
+            SortedList<Clientes> sortedDados = new SortedList<>(filtro);
             sortedDados.comparatorProperty().bind(tableViewCliente.comparatorProperty());
             tableViewCliente.setItems(sortedDados);
-             */
 
     // Fim do filtro de pesquisa
     

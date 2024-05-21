@@ -34,7 +34,7 @@
                </font>
             </Button>
             <Line endX="86.0" endY="135.5" layoutX="72.0" layoutY="-29.0" startX="-31.0" startY="135.5" stroke="WHITE" />
-            <Button layoutX="60.0" layoutY="349.0" mnemonicParsing="false" style="-fx-background-color: #2D3447;" text="Acerca de" textFill="#797676">
+            <Button layoutX="60.0" layoutY="349.0" mnemonicParsing="false" onAction="#buttonAcercaDe" style="-fx-background-color: #2D3447;" text="Acerca de" textFill="#797676">
                <font>
                   <Font size="14.0" />
                </font>
